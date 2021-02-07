@@ -33,15 +33,6 @@ public class Splash extends AppCompatActivity {
         nameTV.startAnimation(animFadeblink);
 
     }
-    public void splashHandler()
-    {
-        if (ContextCompat.checkSelfPermission(Splash.this,
-                Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-            splashView();
-        } else {
-            requestStoragePermission();
-        }
-    }
     private void splashView() {
         animation();
         new Handler().postDelayed(new Runnable() {
@@ -51,6 +42,15 @@ public class Splash extends AppCompatActivity {
                 finish();
             }
         }, 3000);
+    }
+    public void splashHandler()
+    {
+        if (ContextCompat.checkSelfPermission(Splash.this,
+                Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+            splashView();
+        } else {
+            requestStoragePermission();
+        }
     }
     public void enableRuntimePermission() {
         if (ActivityCompat.shouldShowRequestPermissionRationale(Splash.this,
@@ -90,7 +90,7 @@ public class Splash extends AppCompatActivity {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 splashView();
             } else {
-                Toast.makeText(this, "Permission DENIED", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Permission DENIED!!", Toast.LENGTH_SHORT).show();
                 splashView();
             }
         }
