@@ -19,13 +19,13 @@ public class Splash extends AppCompatActivity {
     private int STORAGE_PERMISSION_CODE = 1;
     public static final int RequestPermissionCode = 1;
     // Animation
-    Animation animFadeblink,animFadein;
-    TextView nameTV,degreeTV;
+    Animation animFadeblink;
+    TextView nameTV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-          splashHandler();
+       //   splashHandler();
     }
     private void animation() {
         nameTV=findViewById(R.id.nameTv);
