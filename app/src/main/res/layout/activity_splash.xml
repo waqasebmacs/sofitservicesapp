@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.Splash">
+    <TextView
+        android:id="@+id/NameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:text="Name:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splash_img" />
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Waqas Hussian"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/NameTV"
+        app:layout_constraintStart_toEndOf="@+id/NameTV"
+        app:layout_constraintTop_toTopOf="@+id/NameTV" />
+    <TextView
+        android:id="@+id/desigTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Designation:-"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/NameTV"
+        app:layout_constraintTop_toBottomOf="@+id/NameTV" />
+    <TextView
+        android:id="@+id/androidTB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Android Developer"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/desigTV"
+        app:layout_constraintStart_toEndOf="@+id/desigTV"
+        app:layout_constraintTop_toTopOf="@+id/desigTV" />
+    <TextView
+        android:id="@+id/taskTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Task:-"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/desigTV"
+        app:layout_constraintTop_toBottomOf="@+id/desigTV" />
+    <TextView
+        android:id="@+id/taskdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Services &amp; Policies"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/taskTv"
+        app:layout_constraintStart_toEndOf="@+id/taskTv"
+        app:layout_constraintTop_toTopOf="@+id/taskTv" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/teal_700"
+        app:layout_constraintStart_toStartOf="@+id/taskTv"
+        app:layout_constraintTop_toBottomOf="@+id/taskTv" />
+
+
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskdes"
+        app:srcCompat="@drawable/sofitlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
